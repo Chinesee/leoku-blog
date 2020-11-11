@@ -2,7 +2,6 @@
   <nav
     v-if="userLinks.length || repoLink"
     class="nav-links"
-    :class="[{ 'home-links': $page.frontmatter.home }]"
   >
     <!-- user links -->
     <div

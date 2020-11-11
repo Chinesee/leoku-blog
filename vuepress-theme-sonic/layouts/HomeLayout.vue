@@ -3,7 +3,7 @@
     class="theme-container home-container"
     :class="pageClasses"
   >
-    <HomeNavbar @toggle-sidebar="toggleSidebar" />
+    <Navbar @toggle-sidebar="toggleSidebar" />
 
     <div
       class="sidebar-mask"
@@ -29,16 +29,16 @@
 </template>
 
 <script>
-import Home from '@theme/components/Home.vue'
-import HomeNavbar from '@theme/components/HomeNavbar.vue'
+import Navbar from '@theme/components/Navbar.vue'
 import Sidebar from '@theme/components/Sidebar.vue'
+import Home from '@theme/components/Home.vue'
 import PageFooter from '@theme/components/PageFooter.vue'
 import { resolveSidebarItems } from '../util'
 
 export default {
   name: 'HomeLayout',
 
-  components: { Home, HomeNavbar, Sidebar, PageFooter },
+  components: { Navbar, Sidebar, Home, PageFooter },
 
   data() {
     return {
