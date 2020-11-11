@@ -42,7 +42,7 @@ jobs:
         # 填写项目所在仓库地址
         GITHUB_REPO: github.com/Chinesee/leoku-blog.git
       run: |
-        cd ./dist
+        cd ./docs/.vuepress/dist
         git init
         git config --local user.name "LeoKu"
         git config --local user.email "czc12580520@gmail.com"
