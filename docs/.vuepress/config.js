@@ -84,6 +84,7 @@ module.exports = {
     blog: [
       '/blog/deploy-vue-app-to-github-pages',
       '/blog/ci-cd-with-github-actions-to-deploy-on-github-pages',
+      '/blog/to-oak',
     ],
   },
 
