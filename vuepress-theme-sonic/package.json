@@ -1,0 +1,17 @@
+{
+  "name": "vuepress-theme-sonic",
+  "version": "0.1.0",
+  "description": "A pretty theme for VuePress, it can be used to create blogs or documents.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vuepress-theme",
+    "vuepress",
+    "theme",
+    "vue"
+  ],
+  "author": "LeoKu",
+  "license": "MIT"
+}
