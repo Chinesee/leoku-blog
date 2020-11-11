@@ -37,21 +37,19 @@
 
       <div class="text">
         <a
-          v-for="({ icon, link }) in [
-          { icon: 'github', link:'https://github.com/Chinesee' },
-          { icon: 'twitter', link:'https://twitter.com/Jack59846322' },
-          { icon: 'codepen', link:'https://codepen.io/chinesee' },
+          v-for="({ name, icon, link }) in [
+          { name: 'GitHub', icon: '/icon/github.svg', link: 'https://github.com/Chinesee' },
+          { name: '新浪微博', icon: '/icon/weibo.svg', link: 'https://weibo.com/leoku4' },
+          { name: 'Codepen', icon: '/icon/codepen.svg', link: 'https://codepen.io/chinesee' },
         ]"
           :key="icon"
           :href="link"
-          class="mx-2"
+          :title="name"
+          style="margin: 0 0.6rem;"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i
-            class="bx"
-            :class="[`bxl-${icon}`]"
-          ></i>
+          <img :src="icon">
         </a>
       </div>
     </section>
@@ -82,7 +80,7 @@ export default {
   display block
 
   .introduction
-    min-height 100vh
+    min-height 100vh - $navbarHeight
     display flex
     flex-direction column
     justify-content center
@@ -111,6 +109,7 @@ export default {
         z-index -1
         width 100%
         transform scale(1.2)
+        user-select none
 
     .text
       line-height 1.5
@@ -133,6 +132,7 @@ export default {
       width 10rem
       height 3rem
       line-height 3rem
+      margin-bottom 2rem
       text-align center
       border-radius 1.5rem
       color #fff

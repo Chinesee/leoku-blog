@@ -106,13 +106,8 @@ function css(el, property) {
   align-items center
   justify-content center
   line-height $navbarHeight - 1.4rem
-
-  &.navbar-blog
-    position relative
-
-  &:not(.navbar-blog)
-    background-color hsla(0, 0%, 100%, 0.8)
-    backdrop-filter saturate(180%) blur(5px)
+  background-color hsla(0, 0%, 100%, 0.8)
+  backdrop-filter saturate(180%) blur(5px)
 
   a,
   span,

@@ -1,8 +1,8 @@
 {
-  "name": "venus-docs",
-  "description": "Venus is an awesome Vue admin templete.",
+  "name": "leoku-blog",
+  "description": "LeoKu's blog",
   "license": "MIT",
-  "author": "LeoKu<czc12580520@gmail.com>",
+  "author": "LeoKu <czc12580520@gmail.com>",
   "scripts": {
     "start": "yarn dev",
     "dev": "vuepress dev docs",
@@ -15,8 +15,5 @@
     "eslint-plugin-vue": "^7.0.1",
     "push-dir": "^0.4.1",
     "vuepress": "^1.7.0"
-  },
-  "dependencies": {
-    "vuepress-theme-sonic": "^0.1.0"
   }
 }

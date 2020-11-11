@@ -13,5 +13,5 @@ export default {
 
 <style lang="stylus" scoped>
 .blog-content
-  // padding 2rem 0 0 0
+  min-height 'calc(100vh - %s - %s)' % ($navbarHeight $footerHeight)
 </style>

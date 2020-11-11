@@ -41,20 +41,20 @@ export default {
 <style lang="stylus" scoped>
 .blog-list
   position relative
-  min-height 'calc(100vh - %s)' % $navbarHeight
+  min-height 'calc(100vh - %s - %s)' % ($navbarHeight $footerHeight)
   box-sizing border-box
 
   .container
     position relative
     z-index 10
-    padding-top 6rem
-    padding-left 20rem
-    padding-right 2rem
+    max-width 600px
+    margin 0 auto
+    padding 4rem 0
 
     .page-title
       margin-bottom 4rem
 
-      h1
+      .title
         margin 0
         color $accentColor
         font-size 3rem
