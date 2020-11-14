@@ -14,10 +14,10 @@
       <p class="text text-2">
         <span :class="{ 'point': true }">
           Good at
-          <img
+          <!-- <img
             class="underscore"
             src="/underscore.svg"
-          >
+          > -->
         </span>
         dreaming <br>
         Indulge in programming <br>
@@ -102,14 +102,14 @@ export default {
       position relative
       z-index 0
 
-      .underscore
+      &::after
+        content url('/underscore.svg')
         position absolute
-        top -35px
-        left -20px
         z-index -1
-        width 100%
-        transform scale(1.2)
-        user-select none
+        top 0
+        left 0
+        height 100px
+        transform translate(-40px, -60px)
 
     .text
       line-height 1.5
@@ -145,7 +145,7 @@ export default {
     .introduction
       margin 0 -2rem
 
-      .point .underscore
+      .point::after
         display none
 
       .text-1
