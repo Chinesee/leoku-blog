@@ -77,7 +77,7 @@ module.exports = {
 
   themeConfig: {
     logo: '/logo.png',
-    repo: 'https://github.com/Chinesee/magic-sonic-docs',
+    repo: 'https://github.com/Chinesee',
     lastUpdated: '最近更新',
     ...getNavbar(),
     ...getSidebar(),
