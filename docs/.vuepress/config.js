@@ -82,6 +82,7 @@ module.exports = {
     ...getNavbar(),
     ...getSidebar(),
     blog: [
+      '/blog/develop-your-code-specification',
       '/blog/to-oak',
       '/blog/deploy-vue-app-to-github-pages',
       '/blog/ci-cd-with-github-actions-to-deploy-on-github-pages',
