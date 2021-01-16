@@ -1,11 +1,13 @@
 <template>
   <div class="footer">
-    Made with <a
+    Made with
+    <a
       class="vuepress-link"
       href="https://vuepress.vuejs.org/"
       target="_blank"
       rel="noopener noreferrer"
-    >Vuepress</a>
+      >Vuepress</a
+    >
   </div>
 </template>
 

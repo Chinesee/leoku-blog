@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="sidebar-button"
-    @click="$emit('toggle-sidebar')"
-  >
+  <div class="sidebar-button" @click="$emit('toggle-sidebar')">
     <icon-menu-alt-left />
   </div>
 </template>

@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="theme-code-block"
-    :class="{ 'theme-code-block__active': active }"
-  >
+  <div class="theme-code-block" :class="{ 'theme-code-block__active': active }">
     <slot />
   </div>
 </template>

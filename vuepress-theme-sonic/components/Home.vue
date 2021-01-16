@@ -2,54 +2,52 @@
   <main class="home">
     <section class="introduction">
       <div class="avatar-bg">
-        <img
-          alt="avatar"
-          class="avatar"
-          src="/avatar.png"
-        >
+        <img alt="avatar" class="avatar" src="/avatar.png" />
       </div>
-      <p class="text text-1">
-        Hi, I'm LeoKu 🖖
-      </p>
+      <p class="text text-1">Hi, I'm LeoKu 🖖</p>
       <p class="text text-2">
-        <span :class="{ 'point': true }">
-          Good at
-          <!-- <img
-            class="underscore"
-            src="/underscore.svg"
-          > -->
-        </span>
-        dreaming <br>
-        Indulge in programming <br>
+        <span :class="{ point: true }"> Good at </span>
+        dreaming <br />
+        Indulge in programming <br />
         Love to contribute
       </p>
       <p class="text text-3">
-        A front-end developer by now <br>
-        Trying various programming languages <br>
+        A front-end developer by now <br />
+        Trying various programming languages <br />
         Keep exploring
       </p>
 
       <router-link to="/about">
-        <div class="about">
-          更多关于我
-        </div>
+        <div class="about">更多关于我</div>
       </router-link>
 
       <div class="text">
         <a
-          v-for="({ name, icon, link }) in [
-          { name: 'GitHub', icon: '/icon/github.svg', link: 'https://github.com/Chinesee' },
-          { name: '新浪微博', icon: '/icon/weibo.svg', link: 'https://weibo.com/leoku4' },
-          { name: 'Codepen', icon: '/icon/codepen.svg', link: 'https://codepen.io/chinesee' },
-        ]"
+          v-for="{ name, icon, link } in [
+            {
+              name: 'GitHub',
+              icon: '/icon/github.svg',
+              link: 'https://github.com/Chinesee',
+            },
+            {
+              name: '新浪微博',
+              icon: '/icon/weibo.svg',
+              link: 'https://weibo.com/leoku4',
+            },
+            {
+              name: 'Codepen',
+              icon: '/icon/codepen.svg',
+              link: 'https://codepen.io/chinesee',
+            },
+          ]"
           :key="icon"
           :href="link"
           :title="name"
-          style="margin: 0 0.6rem;"
+          style="margin: 0 0.6rem"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img :src="icon">
+          <img :src="icon" />
         </a>
       </div>
     </section>
@@ -57,7 +55,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'Home',
 

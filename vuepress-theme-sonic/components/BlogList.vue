@@ -6,15 +6,8 @@
       </div>
 
       <div class="articles">
-        <article
-          v-for="(blog, i) in blogItems"
-          :key="i"
-          class="blog-item"
-        >
-          <RouterLink
-            class="blog-link"
-            :to="blog.path"
-          >
+        <article v-for="(blog, i) in blogItems" :key="i" class="blog-item">
+          <RouterLink class="blog-link" :to="blog.path">
             <h3 class="blog-item__title">{{ blog.title }}</h3>
             <p class="blog-item__desc">{{ blog.frontmatter.description }}</p>
             <div class="blog-item__more">

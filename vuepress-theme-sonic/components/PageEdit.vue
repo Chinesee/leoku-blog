@@ -1,21 +1,13 @@
 <template>
   <footer class="page-edit">
-    <div
-      v-if="editLink"
-      class="edit-link"
-    >
-      <a
-        :href="editLink"
-        target="_blank"
-        rel="noopener noreferrer"
-      >{{ editLinkText }}</a>
+    <div v-if="editLink" class="edit-link">
+      <a :href="editLink" target="_blank" rel="noopener noreferrer">{{
+        editLinkText
+      }}</a>
       <OutboundLink />
     </div>
 
-    <div
-      v-if="lastUpdated"
-      class="last-updated"
-    >
+    <div v-if="lastUpdated" class="last-updated">
       <span class="prefix">{{ lastUpdatedText }}:</span>
       <span class="time">{{ lastUpdated }}</span>
     </div>
@@ -62,7 +54,7 @@ export default {
           docsRepo,
           docsDir,
           docsBranch,
-          this.$page.relativePath,
+          this.$page.relativePath
         )
       }
       return null
@@ -70,9 +62,9 @@ export default {
 
     editLinkText() {
       return (
-        this.$themeLocaleConfig.editLinkText
-        || this.$site.themeConfig.editLinkText
-        || 'Edit this page'
+        this.$themeLocaleConfig.editLinkText ||
+        this.$site.themeConfig.editLinkText ||
+        'Edit this page'
       )
     },
   },
@@ -83,12 +75,12 @@ export default {
       if (bitbucket.test(docsRepo)) {
         const base = docsRepo
         return (
-          base.replace(endingSlashRE, '')
-          + '/src'
-          + `/${docsBranch}/`
-          + (docsDir ? docsDir.replace(endingSlashRE, '') + '/' : '')
-          + path
-          + `?mode=edit&spa=0&at=${docsBranch}&fileviewer=file-view-default`
+          base.replace(endingSlashRE, '') +
+          '/src' +
+          `/${docsBranch}/` +
+          (docsDir ? docsDir.replace(endingSlashRE, '') + '/' : '') +
+          path +
+          `?mode=edit&spa=0&at=${docsBranch}&fileviewer=file-view-default`
         )
       }
 
@@ -96,11 +88,11 @@ export default {
       if (gitlab.test(docsRepo)) {
         const base = docsRepo
         return (
-          base.replace(endingSlashRE, '')
-          + '/-/edit'
-          + `/${docsBranch}/`
-          + (docsDir ? docsDir.replace(endingSlashRE, '') + '/' : '')
-          + path
+          base.replace(endingSlashRE, '') +
+          '/-/edit' +
+          `/${docsBranch}/` +
+          (docsDir ? docsDir.replace(endingSlashRE, '') + '/' : '') +
+          path
         )
       }
 
@@ -108,11 +100,11 @@ export default {
         ? docsRepo
         : `https://github.com/${docsRepo}`
       return (
-        base.replace(endingSlashRE, '')
-        + '/edit'
-        + `/${docsBranch}/`
-        + (docsDir ? docsDir.replace(endingSlashRE, '') + '/' : '')
-        + path
+        base.replace(endingSlashRE, '') +
+        '/edit' +
+        `/${docsBranch}/` +
+        (docsDir ? docsDir.replace(endingSlashRE, '') + '/' : '') +
+        path
       )
     },
   },

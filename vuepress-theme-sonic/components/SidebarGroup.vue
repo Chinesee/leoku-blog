@@ -4,9 +4,9 @@
     :class="[
       {
         collapsable,
-        'is-sub-group': depth !== 0
+        'is-sub-group': depth !== 0,
       },
-      `depth-${depth}`
+      `depth-${depth}`,
     ]"
   >
     <RouterLink
@@ -14,7 +14,7 @@
       class="sidebar-heading clickable"
       :class="{
         open,
-        'active': isActive($route, item.path)
+        active: isActive($route, item.path),
       }"
       :to="item.path"
       @click.native="$emit('toggle')"
@@ -65,12 +65,7 @@ export default {
     DropdownTransition,
   },
 
-  props: [
-    'item',
-    'open',
-    'collapsable',
-    'depth',
-  ],
+  props: ['item', 'open', 'collapsable', 'depth'],
 
   // ref: https://vuejs.org/v2/guide/components-edge-cases.html#Circular-References-Between-Components
   beforeCreate() {

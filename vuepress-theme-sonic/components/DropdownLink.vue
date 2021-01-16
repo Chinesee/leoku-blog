@@ -1,30 +1,21 @@
 <template>
-  <div
-    class="dropdown-wrapper"
-    :class="{ open }"
-  >
+  <div class="dropdown-wrapper" :class="{ open }">
     <a
       class="dropdown-title nav-link"
-      :class="{ 'router-link-active' : isActive }"
+      :class="{ 'router-link-active': isActive }"
       :href="item.link"
       @click="handleDropdown"
     >
       <span class="title">{{ item.text }}</span>
       <icon-chevron-down />
     </a>
-    <a
-      class="mobile-dropdown-title"
-      @click="setOpen(!open)"
-    >
+    <a class="mobile-dropdown-title" @click="setOpen(!open)">
       <span class="title">{{ item.text }}</span>
       <icon-chevron-down :class="open ? 'down' : 'right'" />
     </a>
 
     <DropdownTransition>
-      <ul
-        v-show="open"
-        class="nav-dropdown"
-      >
+      <ul v-show="open" class="nav-dropdown">
         <li
           v-for="(subItem, index) in item.items"
           :key="subItem.link || index"
@@ -34,10 +25,7 @@
             {{ subItem.text }}
           </h4>
 
-          <ul
-            v-if="subItem.type === 'links'"
-            class="dropdown-subitem-wrapper"
-          >
+          <ul v-if="subItem.type === 'links'" class="dropdown-subitem-wrapper">
             <li
               v-for="childSubItem in subItem.items"
               :key="childSubItem.link"

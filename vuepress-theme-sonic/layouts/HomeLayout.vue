@@ -1,19 +1,10 @@
 <template>
-  <div
-    class="theme-container home-container"
-    :class="pageClasses"
-  >
+  <div class="theme-container home-container" :class="pageClasses">
     <Navbar @toggle-sidebar="toggleSidebar" />
 
-    <div
-      class="sidebar-mask"
-      @click="toggleSidebar(false)"
-    />
+    <div class="sidebar-mask" @click="toggleSidebar(false)" />
 
-    <Sidebar
-      :items="sidebarItems"
-      @toggle-sidebar="toggleSidebar"
-    >
+    <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar">
       <template #top>
         <slot name="sidebar-top" />
       </template>
@@ -50,17 +41,15 @@ export default {
     shouldShowNavbar() {
       const { themeConfig } = this.$site
       const { frontmatter } = this.$page
-      if (
-        frontmatter.navbar === false
-        || themeConfig.navbar === false) {
+      if (frontmatter.navbar === false || themeConfig.navbar === false) {
         return false
       }
       return (
-        this.$title
-        || themeConfig.logo
-        || themeConfig.repo
-        || themeConfig.nav
-        || this.$themeLocaleConfig.nav
+        this.$title ||
+        themeConfig.logo ||
+        themeConfig.repo ||
+        themeConfig.nav ||
+        this.$themeLocaleConfig.nav
       )
     },
 
@@ -69,7 +58,7 @@ export default {
         this.$page,
         this.$page.regularPath,
         this.$site,
-        this.$localePath,
+        this.$localePath
       )
     },
 

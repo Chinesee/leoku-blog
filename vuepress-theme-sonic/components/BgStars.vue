@@ -1,15 +1,8 @@
 <template>
   <div class="bg-stars">
     <svg class="stars starInner--animated css-bclhwr">
-      <svg
-        class="star star--gatsby"
-        x="80%"
-        y="15%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.5)"
-        >
+      <svg class="star star--gatsby" x="80%" y="15%">
+        <g class="starContent css-vcsoa9" transform="scale(0.5)">
           <g class="starInner">
             <path
               fill="rgba(100, 133, 255, 0.8)"
@@ -20,15 +13,8 @@
           </g>
         </g>
       </svg>
-      <svg
-        class="star star--gatsby"
-        x="12%"
-        y="58%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.5)"
-        >
+      <svg class="star star--gatsby" x="12%" y="58%">
+        <g class="starContent css-vcsoa9" transform="scale(0.5)">
           <g class="starInner">
             <path
               fill="rgba(255, 218, 91, 1)"
@@ -39,15 +25,8 @@
           </g>
         </g>
       </svg>
-      <svg
-        class="star star--gatsby"
-        x="5%"
-        y="35%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.5)"
-        >
+      <svg class="star star--gatsby" x="5%" y="35%">
+        <g class="starContent css-vcsoa9" transform="scale(0.5)">
           <g class="starInner">
             <path
               fill="rgba(100, 133, 255, 0.8)"
@@ -58,15 +37,8 @@
           </g>
         </g>
       </svg>
-      <svg
-        class="star star--gatsby"
-        x="10%"
-        y="70%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.25)"
-        >
+      <svg class="star star--gatsby" x="10%" y="70%">
+        <g class="starContent css-vcsoa9" transform="scale(0.25)">
           <g class="starInner">
             <path
               fill="rgba(100, 133, 255, 0.6)"
@@ -77,15 +49,8 @@
           </g>
         </g>
       </svg>
-      <svg
-        class="star star--bright"
-        x="15%"
-        y="52%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.35)"
-        >
+      <svg class="star star--bright" x="15%" y="52%">
+        <g class="starContent css-vcsoa9" transform="scale(0.35)">
           <g class="starInner">
             <path
               fill="rgba(100, 133, 255, 0.2)"
@@ -96,15 +61,8 @@
           </g>
         </g>
       </svg>
-      <svg
-        class="star star--accent"
-        x="25%"
-        y="35%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.25)"
-        >
+      <svg class="star star--accent" x="25%" y="35%">
+        <g class="starContent css-vcsoa9" transform="scale(0.25)">
           <g class="starInner">
             <path
               fill="rgba(100, 133, 255, 0.1)"
@@ -115,15 +73,8 @@
           </g>
         </g>
       </svg>
-      <svg
-        class="star star--bright"
-        x="47%"
-        y="42%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.5)"
-        >
+      <svg class="star star--bright" x="47%" y="42%">
+        <g class="starContent css-vcsoa9" transform="scale(0.5)">
           <g class="starInner">
             <path
               fill="rgba(100, 133, 255, 0.3)"
@@ -132,16 +83,9 @@
               d="M13.136,5.728 C11.5573333,5.728 10.272,4.44266667 10.272,2.864 C10.272,1.29066667 9.248,0 8,0 C6.752,0 5.728,1.29066667 5.728,2.864 C5.728,4.44266667 4.44266667,5.728 2.864,5.728 C1.29066667,5.728 0,6.752 0,8 C0,9.248 1.29066667,10.272 2.864,10.272 C4.44266667,10.272 5.728,11.5573333 5.728,13.136 C5.728,14.7093333 6.752,16 8,16 C9.248,16 10.272,14.7093333 10.272,13.136 C10.272,11.5573333 11.5573333,10.272 13.136,10.272 C14.7093333,10.272 16,9.248 16,8 C16,6.752 14.7093333,5.728 13.136,5.728 Z"
             ></path>
           </g>
-        </g>
-      </svg><svg
-        class="star star--bright"
-        x="58%"
-        y="52%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.3)"
-        >
+        </g></svg
+      ><svg class="star star--bright" x="58%" y="52%">
+        <g class="starContent css-vcsoa9" transform="scale(0.3)">
           <g class="starInner">
             <path
               fill="rgba(100, 133, 255, 0.2)"
@@ -150,16 +94,9 @@
               d="M13.136,5.728 C11.5573333,5.728 10.272,4.44266667 10.272,2.864 C10.272,1.29066667 9.248,0 8,0 C6.752,0 5.728,1.29066667 5.728,2.864 C5.728,4.44266667 4.44266667,5.728 2.864,5.728 C1.29066667,5.728 0,6.752 0,8 C0,9.248 1.29066667,10.272 2.864,10.272 C4.44266667,10.272 5.728,11.5573333 5.728,13.136 C5.728,14.7093333 6.752,16 8,16 C9.248,16 10.272,14.7093333 10.272,13.136 C10.272,11.5573333 11.5573333,10.272 13.136,10.272 C14.7093333,10.272 16,9.248 16,8 C16,6.752 14.7093333,5.728 13.136,5.728 Z"
             ></path>
           </g>
-        </g>
-      </svg><svg
-        class="star star--bright"
-        x="10%"
-        y="50%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.4)"
-        >
+        </g></svg
+      ><svg class="star star--bright" x="10%" y="50%">
+        <g class="starContent css-vcsoa9" transform="scale(0.4)">
           <g class="starInner">
             <path
               fill="rgba(100, 133, 255, 0.1)"
@@ -168,16 +105,9 @@
               d="M13.136,5.728 C11.5573333,5.728 10.272,4.44266667 10.272,2.864 C10.272,1.29066667 9.248,0 8,0 C6.752,0 5.728,1.29066667 5.728,2.864 C5.728,4.44266667 4.44266667,5.728 2.864,5.728 C1.29066667,5.728 0,6.752 0,8 C0,9.248 1.29066667,10.272 2.864,10.272 C4.44266667,10.272 5.728,11.5573333 5.728,13.136 C5.728,14.7093333 6.752,16 8,16 C9.248,16 10.272,14.7093333 10.272,13.136 C10.272,11.5573333 11.5573333,10.272 13.136,10.272 C14.7093333,10.272 16,9.248 16,8 C16,6.752 14.7093333,5.728 13.136,5.728 Z"
             ></path>
           </g>
-        </g>
-      </svg><svg
-        class="star star--accent"
-        x="20%"
-        y="30%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.25)"
-        >
+        </g></svg
+      ><svg class="star star--accent" x="20%" y="30%">
+        <g class="starContent css-vcsoa9" transform="scale(0.25)">
           <g class="starInner">
             <path
               fill="rgba(100, 133, 255, 0.2)"
@@ -186,16 +116,9 @@
               d="M13.136,5.728 C11.5573333,5.728 10.272,4.44266667 10.272,2.864 C10.272,1.29066667 9.248,0 8,0 C6.752,0 5.728,1.29066667 5.728,2.864 C5.728,4.44266667 4.44266667,5.728 2.864,5.728 C1.29066667,5.728 0,6.752 0,8 C0,9.248 1.29066667,10.272 2.864,10.272 C4.44266667,10.272 5.728,11.5573333 5.728,13.136 C5.728,14.7093333 6.752,16 8,16 C9.248,16 10.272,14.7093333 10.272,13.136 C10.272,11.5573333 11.5573333,10.272 13.136,10.272 C14.7093333,10.272 16,9.248 16,8 C16,6.752 14.7093333,5.728 13.136,5.728 Z"
             ></path>
           </g>
-        </g>
-      </svg><svg
-        class="star star--bright"
-        x="40%"
-        y="30%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.5)"
-        >
+        </g></svg
+      ><svg class="star star--bright" x="40%" y="30%">
+        <g class="starContent css-vcsoa9" transform="scale(0.5)">
           <g class="starInner">
             <path
               fill="rgba(100, 133, 255, 0.2)"
@@ -204,16 +127,9 @@
               d="M13.136,5.728 C11.5573333,5.728 10.272,4.44266667 10.272,2.864 C10.272,1.29066667 9.248,0 8,0 C6.752,0 5.728,1.29066667 5.728,2.864 C5.728,4.44266667 4.44266667,5.728 2.864,5.728 C1.29066667,5.728 0,6.752 0,8 C0,9.248 1.29066667,10.272 2.864,10.272 C4.44266667,10.272 5.728,11.5573333 5.728,13.136 C5.728,14.7093333 6.752,16 8,16 C9.248,16 10.272,14.7093333 10.272,13.136 C10.272,11.5573333 11.5573333,10.272 13.136,10.272 C14.7093333,10.272 16,9.248 16,8 C16,6.752 14.7093333,5.728 13.136,5.728 Z"
             ></path>
           </g>
-        </g>
-      </svg><svg
-        class="star star--gatsby"
-        x="85%"
-        y="20%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.25)"
-        >
+        </g></svg
+      ><svg class="star star--gatsby" x="85%" y="20%">
+        <g class="starContent css-vcsoa9" transform="scale(0.25)">
           <g class="starInner">
             <path
               fill="rgba(100, 133, 255, 0.6)"
@@ -222,16 +138,9 @@
               d="M13.136,5.728 C11.5573333,5.728 10.272,4.44266667 10.272,2.864 C10.272,1.29066667 9.248,0 8,0 C6.752,0 5.728,1.29066667 5.728,2.864 C5.728,4.44266667 4.44266667,5.728 2.864,5.728 C1.29066667,5.728 0,6.752 0,8 C0,9.248 1.29066667,10.272 2.864,10.272 C4.44266667,10.272 5.728,11.5573333 5.728,13.136 C5.728,14.7093333 6.752,16 8,16 C9.248,16 10.272,14.7093333 10.272,13.136 C10.272,11.5573333 11.5573333,10.272 13.136,10.272 C14.7093333,10.272 16,9.248 16,8 C16,6.752 14.7093333,5.728 13.136,5.728 Z"
             ></path>
           </g>
-        </g>
-      </svg><svg
-        class="star star--bright"
-        x="70%"
-        y="20%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.35)"
-        >
+        </g></svg
+      ><svg class="star star--bright" x="70%" y="20%">
+        <g class="starContent css-vcsoa9" transform="scale(0.35)">
           <g class="starInner">
             <path
               fill="rgba(100, 133, 255, 0.4)"
@@ -240,16 +149,9 @@
               d="M13.136,5.728 C11.5573333,5.728 10.272,4.44266667 10.272,2.864 C10.272,1.29066667 9.248,0 8,0 C6.752,0 5.728,1.29066667 5.728,2.864 C5.728,4.44266667 4.44266667,5.728 2.864,5.728 C1.29066667,5.728 0,6.752 0,8 C0,9.248 1.29066667,10.272 2.864,10.272 C4.44266667,10.272 5.728,11.5573333 5.728,13.136 C5.728,14.7093333 6.752,16 8,16 C9.248,16 10.272,14.7093333 10.272,13.136 C10.272,11.5573333 11.5573333,10.272 13.136,10.272 C14.7093333,10.272 16,9.248 16,8 C16,6.752 14.7093333,5.728 13.136,5.728 Z"
             ></path>
           </g>
-        </g>
-      </svg><svg
-        class="star star--accent"
-        x="90%"
-        y="10%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.35)"
-        >
+        </g></svg
+      ><svg class="star star--accent" x="90%" y="10%">
+        <g class="starContent css-vcsoa9" transform="scale(0.35)">
           <g class="starInner">
             <path
               fill="rgba(255, 218, 91, 1)"
@@ -258,16 +160,9 @@
               d="M13.136,5.728 C11.5573333,5.728 10.272,4.44266667 10.272,2.864 C10.272,1.29066667 9.248,0 8,0 C6.752,0 5.728,1.29066667 5.728,2.864 C5.728,4.44266667 4.44266667,5.728 2.864,5.728 C1.29066667,5.728 0,6.752 0,8 C0,9.248 1.29066667,10.272 2.864,10.272 C4.44266667,10.272 5.728,11.5573333 5.728,13.136 C5.728,14.7093333 6.752,16 8,16 C9.248,16 10.272,14.7093333 10.272,13.136 C10.272,11.5573333 11.5573333,10.272 13.136,10.272 C14.7093333,10.272 16,9.248 16,8 C16,6.752 14.7093333,5.728 13.136,5.728 Z"
             ></path>
           </g>
-        </g>
-      </svg><svg
-        class="star star--bright"
-        x="75%"
-        y="10%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.25)"
-        >
+        </g></svg
+      ><svg class="star star--bright" x="75%" y="10%">
+        <g class="starContent css-vcsoa9" transform="scale(0.25)">
           <g class="starInner">
             <path
               fill="rgba(100, 133, 255, 0.2)"
@@ -276,16 +171,9 @@
               d="M13.136,5.728 C11.5573333,5.728 10.272,4.44266667 10.272,2.864 C10.272,1.29066667 9.248,0 8,0 C6.752,0 5.728,1.29066667 5.728,2.864 C5.728,4.44266667 4.44266667,5.728 2.864,5.728 C1.29066667,5.728 0,6.752 0,8 C0,9.248 1.29066667,10.272 2.864,10.272 C4.44266667,10.272 5.728,11.5573333 5.728,13.136 C5.728,14.7093333 6.752,16 8,16 C9.248,16 10.272,14.7093333 10.272,13.136 C10.272,11.5573333 11.5573333,10.272 13.136,10.272 C14.7093333,10.272 16,9.248 16,8 C16,6.752 14.7093333,5.728 13.136,5.728 Z"
             ></path>
           </g>
-        </g>
-      </svg><svg
-        class="star star--bright"
-        x="75%"
-        y="25%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.5)"
-        >
+        </g></svg
+      ><svg class="star star--bright" x="75%" y="25%">
+        <g class="starContent css-vcsoa9" transform="scale(0.5)">
           <g class="starInner">
             <path
               fill="rgba(100, 133, 255, 0.3)"
@@ -294,16 +182,9 @@
               d="M13.136,5.728 C11.5573333,5.728 10.272,4.44266667 10.272,2.864 C10.272,1.29066667 9.248,0 8,0 C6.752,0 5.728,1.29066667 5.728,2.864 C5.728,4.44266667 4.44266667,5.728 2.864,5.728 C1.29066667,5.728 0,6.752 0,8 C0,9.248 1.29066667,10.272 2.864,10.272 C4.44266667,10.272 5.728,11.5573333 5.728,13.136 C5.728,14.7093333 6.752,16 8,16 C9.248,16 10.272,14.7093333 10.272,13.136 C10.272,11.5573333 11.5573333,10.272 13.136,10.272 C14.7093333,10.272 16,9.248 16,8 C16,6.752 14.7093333,5.728 13.136,5.728 Z"
             ></path>
           </g>
-        </g>
-      </svg><svg
-        class="star star--bright"
-        x="51%"
-        y="82%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.5)"
-        >
+        </g></svg
+      ><svg class="star star--bright" x="51%" y="82%">
+        <g class="starContent css-vcsoa9" transform="scale(0.5)">
           <g class="starInner">
             <path
               fill="rgba(100, 133, 255, 0.2)"
@@ -312,16 +193,9 @@
               d="M13.136,5.728 C11.5573333,5.728 10.272,4.44266667 10.272,2.864 C10.272,1.29066667 9.248,0 8,0 C6.752,0 5.728,1.29066667 5.728,2.864 C5.728,4.44266667 4.44266667,5.728 2.864,5.728 C1.29066667,5.728 0,6.752 0,8 C0,9.248 1.29066667,10.272 2.864,10.272 C4.44266667,10.272 5.728,11.5573333 5.728,13.136 C5.728,14.7093333 6.752,16 8,16 C9.248,16 10.272,14.7093333 10.272,13.136 C10.272,11.5573333 11.5573333,10.272 13.136,10.272 C14.7093333,10.272 16,9.248 16,8 C16,6.752 14.7093333,5.728 13.136,5.728 Z"
             ></path>
           </g>
-        </g>
-      </svg><svg
-        class="star star--accent"
-        x="21%"
-        y="36%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.3)"
-        >
+        </g></svg
+      ><svg class="star star--accent" x="21%" y="36%">
+        <g class="starContent css-vcsoa9" transform="scale(0.3)">
           <g class="starInner">
             <path
               fill="rgba(100, 133, 255, 0.1)"
@@ -330,16 +204,9 @@
               d="M13.136,5.728 C11.5573333,5.728 10.272,4.44266667 10.272,2.864 C10.272,1.29066667 9.248,0 8,0 C6.752,0 5.728,1.29066667 5.728,2.864 C5.728,4.44266667 4.44266667,5.728 2.864,5.728 C1.29066667,5.728 0,6.752 0,8 C0,9.248 1.29066667,10.272 2.864,10.272 C4.44266667,10.272 5.728,11.5573333 5.728,13.136 C5.728,14.7093333 6.752,16 8,16 C9.248,16 10.272,14.7093333 10.272,13.136 C10.272,11.5573333 11.5573333,10.272 13.136,10.272 C14.7093333,10.272 16,9.248 16,8 C16,6.752 14.7093333,5.728 13.136,5.728 Z"
             ></path>
           </g>
-        </g>
-      </svg><svg
-        class="star star--bright"
-        x="28%"
-        y="5%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.2)"
-        >
+        </g></svg
+      ><svg class="star star--bright" x="28%" y="5%">
+        <g class="starContent css-vcsoa9" transform="scale(0.2)">
           <g class="starInner">
             <path
               fill="rgba(100, 133, 255, 0.3)"
@@ -348,16 +215,9 @@
               d="M13.136,5.728 C11.5573333,5.728 10.272,4.44266667 10.272,2.864 C10.272,1.29066667 9.248,0 8,0 C6.752,0 5.728,1.29066667 5.728,2.864 C5.728,4.44266667 4.44266667,5.728 2.864,5.728 C1.29066667,5.728 0,6.752 0,8 C0,9.248 1.29066667,10.272 2.864,10.272 C4.44266667,10.272 5.728,11.5573333 5.728,13.136 C5.728,14.7093333 6.752,16 8,16 C9.248,16 10.272,14.7093333 10.272,13.136 C10.272,11.5573333 11.5573333,10.272 13.136,10.272 C14.7093333,10.272 16,9.248 16,8 C16,6.752 14.7093333,5.728 13.136,5.728 Z"
             ></path>
           </g>
-        </g>
-      </svg><svg
-        class="star star--gatsby"
-        x="32%"
-        y="8%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.5)"
-        >
+        </g></svg
+      ><svg class="star star--gatsby" x="32%" y="8%">
+        <g class="starContent css-vcsoa9" transform="scale(0.5)">
           <g class="starInner">
             <path
               fill="rgba(255, 218, 91, 1)"
@@ -368,15 +228,8 @@
           </g>
         </g>
       </svg>
-      <svg
-        class="star star--accent"
-        x="65%"
-        y="60%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.25)"
-        >
+      <svg class="star star--accent" x="65%" y="60%">
+        <g class="starContent css-vcsoa9" transform="scale(0.25)">
           <g class="starInner">
             <path
               fill="rgba(100, 133, 255, 0.5)"
@@ -387,15 +240,8 @@
           </g>
         </g>
       </svg>
-      <svg
-        class="star star--bright"
-        x="70%"
-        y="49%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.35)"
-        >
+      <svg class="star star--bright" x="70%" y="49%">
+        <g class="starContent css-vcsoa9" transform="scale(0.35)">
           <g class="starInner">
             <path
               fill="rgba(100, 133, 255, 0.4)"
@@ -406,15 +252,8 @@
           </g>
         </g>
       </svg>
-      <svg
-        class="star star--gatsby"
-        x="87%"
-        y="13%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.3)"
-        >
+      <svg class="star star--gatsby" x="87%" y="13%">
+        <g class="starContent css-vcsoa9" transform="scale(0.3)">
           <g class="starInner">
             <path
               fill="rgba(100, 133, 255, 0.2)"
@@ -425,15 +264,8 @@
           </g>
         </g>
       </svg>
-      <svg
-        class="star star--bright"
-        x="25%"
-        y="78%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.25)"
-        >
+      <svg class="star star--bright" x="25%" y="78%">
+        <g class="starContent css-vcsoa9" transform="scale(0.25)">
           <g class="starInner">
             <path
               fill="rgba(100, 133, 255, 0.3)"
@@ -444,15 +276,8 @@
           </g>
         </g>
       </svg>
-      <svg
-        class="star star--bright"
-        x="55%"
-        y="47%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.5)"
-        >
+      <svg class="star star--bright" x="55%" y="47%">
+        <g class="starContent css-vcsoa9" transform="scale(0.5)">
           <g class="starInner">
             <path
               fill="rgba(100, 133, 255, 0.5)"
@@ -463,15 +288,8 @@
           </g>
         </g>
       </svg>
-      <svg
-        class="star star--accent"
-        x="41%"
-        y="72%"
-      >
-        <g
-          class="starContent css-vcsoa9"
-          transform="scale(0.35)"
-        >
+      <svg class="star star--accent" x="41%" y="72%">
+        <g class="starContent css-vcsoa9" transform="scale(0.35)">
           <g class="starInner">
             <path
               fill="rgba(100, 133, 255, 0.3)"

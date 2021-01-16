@@ -8,26 +8,19 @@
 
         <div class="creation-list">
           <div
-            v-for="({ img, title, description, github, preview }) in creations"
+            v-for="{ img, title, description, github, preview } in creations"
             :key="title"
             class="creation-list__item"
           >
             <div class="img-wrapper">
-              <img
-                :src="img"
-                :alt="`${title}的封面图片`"
-                class="cover-img"
-              >
+              <img :src="img" :alt="`${title}的封面图片`" class="cover-img" />
             </div>
 
             <div class="text-content">
               <h3 class="">{{ title }}</h3>
               <p class="desc">{{ description }}</p>
               <div class="links">
-                <div
-                  v-if="github"
-                  class="link"
-                >
+                <div v-if="github" class="link">
                   <a
                     class=""
                     rel="noopener noreferrer"
@@ -37,10 +30,7 @@
                     GitHub
                   </a>
                 </div>
-                <div
-                  v-if="preview"
-                  class="link"
-                >
+                <div v-if="preview" class="link">
                   <a
                     class=""
                     rel="noopener noreferrer"
@@ -62,48 +52,56 @@
 <script>
 export default {
   name: 'Project',
+  components: {},
   data: () => {
     const creations = [
       {
         img: '/img/cover_club.jpg',
         title: '意想社团 - 高校社团 APP',
-        description: '在意想社团，你可以找到感兴趣的社团组织，也可以作为管理者来管理自己的组织。该应用可以用来宣传社团活动，加强社团间的交流。本项目使用 React Native 开发。',
+        description:
+          '在意想社团，你可以找到感兴趣的社团组织，也可以作为管理者来管理自己的组织。该应用可以用来宣传社团活动，加强社团间的交流。本项目使用 React Native 开发。',
         github: 'https://github.com/Chinesee/eason-club',
       },
       {
         img: '/img/cover_venus.jpg',
         title: 'Venus - 中后台系统开发模板',
-        description: '这是一个基于 Vue 的网站模板，为开发者搭建好了网站的基本布局，也实现了后台系统常用的功能如权限控制、可视化仪表盘等。',
+        description:
+          '这是一个基于 Vue 的网站模板，为开发者搭建好了网站的基本布局，也实现了后台系统常用的功能如权限控制、可视化仪表盘等。',
         github: 'https://github.com/Chinesee/venus',
       },
       {
         img: '/img/cover_campus.jpg',
         title: '意想课表 - 教务信息查询助手',
-        description: '使用 mpvue 编译的微信小程序，用于帮助学生们查课表、查成绩、查考勤。',
+        description:
+          '使用 mpvue 编译的微信小程序，用于帮助学生们查课表、查成绩、查考勤。',
         github: 'https://github.com/Chinesee/eason-campus',
         preview: 'https://github.com/Chinesee',
       },
       {
         img: '/img/cover_share_admin.jpg',
         title: '乐享校园后台系统 - 校园二手交易平台',
-        description: '我的毕业设计，是我使用 vue 做的第一个后台管理系统。可以动态切换亮色和暗色主题。',
+        description:
+          '我的毕业设计，是我使用 vue 做的第一个后台管理系统。可以动态切换亮色和暗色主题。',
         github: 'https://gitee.com/chinesee/love-share-admin',
         preview: '',
       },
       {
         img: '/img/cover_share_client.jpg',
         title: '乐享校园客户端 - 校园二手交易平台',
-        description: '我的毕业设计，一个可以发布和购买二手商品的交易平台，具有订单查询、在线沟通、商品评价等功能。',
+        description:
+          '我的毕业设计，一个可以发布和购买二手商品的交易平台，具有订单查询、在线沟通、商品评价等功能。',
         github: 'https://github.com/Chinesee/love-share-client',
         preview: '',
       },
     ]
     const icons = {
       online: {
-        icon: '🎨', label: '在线地址',
+        icon: '🎨',
+        label: '在线地址',
       },
       repository: {
-        icon: '🎉', label: '项目仓库',
+        icon: '🎉',
+        label: '项目仓库',
       },
     }
     return {
@@ -111,9 +109,7 @@ export default {
       icons,
     }
   },
-  components: {},
-  computed: {
-  },
+  computed: {},
 }
 </script>
 

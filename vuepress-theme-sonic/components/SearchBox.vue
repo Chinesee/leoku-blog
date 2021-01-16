@@ -4,7 +4,7 @@
       ref="input"
       aria-label="Search"
       :value="query"
-      :class="{ 'focused': focused }"
+      :class="{ focused: focused }"
       :placeholder="placeholder"
       autocomplete="off"
       spellcheck="false"
@@ -14,7 +14,7 @@
       @keyup.enter="go(focusIndex)"
       @keyup.up="onUp"
       @keyup.down="onDown"
-    >
+    />
     <ul
       v-if="showSuggestions"
       class="suggestions"
@@ -29,15 +29,9 @@
         @mousedown="go(i)"
         @mouseenter="focus(i)"
       >
-        <a
-          :href="s.path"
-          @click.prevent
-        >
+        <a :href="s.path" @click.prevent>
           <span class="page-title">{{ s.title || s.path }}</span>
-          <span
-            v-if="s.header"
-            class="header"
-          >&gt; {{ s.header.title }}</span>
+          <span v-if="s.header" class="header">&gt; {{ s.header.title }}</span>
         </a>
       </li>
     </ul>
@@ -62,11 +56,7 @@ export default {
 
   computed: {
     showSuggestions() {
-      return (
-        this.focused
-        && this.suggestions
-        && this.suggestions.length
-      )
+      return this.focused && this.suggestions && this.suggestions.length
     },
 
     suggestions() {
@@ -76,7 +66,8 @@ export default {
       }
 
       const { pages } = this.$site
-      const max = this.$site.themeConfig.searchMaxSuggestions || SEARCH_MAX_SUGGESTIONS
+      const max =
+        this.$site.themeConfig.searchMaxSuggestions || SEARCH_MAX_SUGGESTIONS
       const localePath = this.$localePath
       const res = []
       for (let i = 0; i < pages.length; i++) {
@@ -99,10 +90,12 @@ export default {
             if (res.length >= max) break
             const h = p.headers[j]
             if (h.title && matchQuery(query, p, h.title)) {
-              res.push(Object.assign({}, p, {
-                path: p.path + '#' + h.slug,
-                header: h,
-              }))
+              res.push(
+                Object.assign({}, p, {
+                  path: p.path + '#' + h.slug,
+                  header: h,
+                })
+              )
             }
           }
         }
@@ -142,17 +135,26 @@ export default {
       let searchPaths = SEARCH_PATHS
 
       // all paths searchables
-      if (searchPaths === null) { return true }
+      if (searchPaths === null) {
+        return true
+      }
 
-      searchPaths = Array.isArray(searchPaths) ? searchPaths : new Array(searchPaths)
+      searchPaths = Array.isArray(searchPaths)
+        ? searchPaths
+        : new Array(searchPaths)
 
-      return searchPaths.filter(path => {
-        return page.path.match(path)
-      }).length > 0
+      return (
+        searchPaths.filter(path => {
+          return page.path.match(path)
+        }).length > 0
+      )
     },
 
     onHotkey(event) {
-      if (event.srcElement === document.body && SEARCH_HOTKEYS.includes(event.key)) {
+      if (
+        event.srcElement === document.body &&
+        SEARCH_HOTKEYS.includes(event.key)
+      ) {
         this.$refs.input.focus()
         event.preventDefault()
       }

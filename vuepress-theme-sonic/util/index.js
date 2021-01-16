@@ -4,9 +4,7 @@ export const endingSlashRE = /\/$/
 export const outboundRE = /^[a-z]+:/i
 
 export function normalize(path) {
-  return decodeURI(path)
-    .replace(hashRE, '')
-    .replace(extRE, '')
+  return decodeURI(path).replace(hashRE, '').replace(extRE, '')
 }
 
 export function getHash(path) {
@@ -72,7 +70,9 @@ export function resolvePage(pages, rawPath, base) {
       })
     }
   }
-  console.error(`[vuepress] No matching page found for sidebar item "${rawPath}"`)
+  console.error(
+    `[vuepress] No matching page found for sidebar item "${rawPath}"`
+  )
   return {}
 }
 
@@ -124,11 +124,13 @@ function resolvePath(relative, base, append) {
 export function resolveSidebarItems(page, regularPath, site, localePath) {
   const { pages, themeConfig } = site
 
-  const localeConfig = localePath && themeConfig.locales
-    ? themeConfig.locales[localePath] || themeConfig
-    : themeConfig
+  const localeConfig =
+    localePath && themeConfig.locales
+      ? themeConfig.locales[localePath] || themeConfig
+      : themeConfig
 
-  const pageSidebarConfig = page.frontmatter.sidebar || localeConfig.sidebar || themeConfig.sidebar
+  const pageSidebarConfig =
+    page.frontmatter.sidebar || localeConfig.sidebar || themeConfig.sidebar
   if (pageSidebarConfig === 'auto') {
     return resolveHeaders(page)
   }
@@ -141,20 +143,20 @@ export function resolveSidebarItems(page, regularPath, site, localePath) {
     if (config === 'auto') {
       return resolveHeaders(page)
     }
-    return config
-      ? config.map(item => resolveItem(item, pages, base))
-      : []
+    return config ? config.map(item => resolveItem(item, pages, base)) : []
   }
 }
 
 export function resolveBlogItems(page, regularPath, site, localePath) {
   const { pages, themeConfig } = site
 
-  const localeConfig = localePath && themeConfig.locales
-    ? themeConfig.locales[localePath] || themeConfig
-    : themeConfig
+  const localeConfig =
+    localePath && themeConfig.locales
+      ? themeConfig.locales[localePath] || themeConfig
+      : themeConfig
 
-  const pageSidebarConfig = page.frontmatter.blog || localeConfig.blog || themeConfig.blog
+  const pageSidebarConfig =
+    page.frontmatter.blog || localeConfig.blog || themeConfig.blog
   if (pageSidebarConfig === 'auto') {
     return resolveHeaders(page)
   }
@@ -167,9 +169,7 @@ export function resolveBlogItems(page, regularPath, site, localePath) {
     if (config === 'auto') {
       return resolveHeaders(page)
     }
-    return config
-      ? config.map(item => resolveItem(item, pages, base))
-      : []
+    return config ? config.map(item => resolveItem(item, pages, base)) : []
   }
 }
 
@@ -179,19 +179,21 @@ export function resolveBlogItems(page, regularPath, site, localePath) {
  */
 function resolveHeaders(page) {
   const headers = groupHeaders(page.headers || [])
-  return [{
-    type: 'group',
-    collapsable: false,
-    title: page.title,
-    path: null,
-    children: headers.map(h => ({
-      type: 'auto',
-      title: h.title,
-      basePath: page.path,
-      path: page.path + '#' + h.slug,
-      children: h.children || [],
-    })),
-  }]
+  return [
+    {
+      type: 'group',
+      collapsable: false,
+      title: page.title,
+      path: null,
+      children: headers.map(h => ({
+        type: 'auto',
+        title: h.title,
+        basePath: page.path,
+        path: page.path + '#' + h.slug,
+        children: h.children || [],
+      })),
+    },
+  ]
 }
 
 export function groupHeaders(headers) {
@@ -202,7 +204,7 @@ export function groupHeaders(headers) {
     if (h.level === 2) {
       lastH2 = h
     } else if (lastH2) {
-      (lastH2.children || (lastH2.children = [])).push(h)
+      ;(lastH2.children || (lastH2.children = [])).push(h)
     }
   })
   return headers.filter(h => h.level === 2)
@@ -238,9 +240,7 @@ export function resolveMatchingConfig(regularPath, config) {
 }
 
 function ensureEndingSlash(path) {
-  return /(\.html|\/)$/.test(path)
-    ? path
-    : path + '/'
+  return /(\.html|\/)$/.test(path) ? path : path + '/'
 }
 
 function resolveItem(item, pages, base, groupDepth = 1) {
@@ -263,7 +263,9 @@ function resolveItem(item, pages, base, groupDepth = 1) {
       title: item.title,
       sidebarDepth: item.sidebarDepth,
       initialOpenGroupIndex: item.initialOpenGroupIndex,
-      children: children.map(child => resolveItem(child, pages, base, groupDepth + 1)),
+      children: children.map(child =>
+        resolveItem(child, pages, base, groupDepth + 1)
+      ),
       collapsable: item.collapsable !== false,
     }
   }

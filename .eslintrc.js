@@ -1,22 +1,29 @@
 module.exports = {
   root: true,
-  extends: [
-    'plugin:vue/essential',
-  ],
-
+  extends: ['plugin:vue/recommended', '@vue/prettier'],
+  plugins: ['prettier'],
   rules: {
+    'prettier/prettier': 2,
     'vue/no-unused-components': 1,
     'vue/attribute-hyphenation': 2,
-    'no-param-reassign': ['error', { props: false }],
-    'object-shorthand': ['error', 'always'],
-    'no-unused-vars': 1,
-    'no-unused-expressions': 0,
-    'max-len': 0,
-    'global-require': 0,
-    'import/no-extraneous-dependencies': 0,
-    'comma-dangle': ['error', 'always-multiline'],
-    semi: ['error', 'never'],
-    camelcase: 'off',
-    quotes: ['error', 'single'],
+    'vue/attributes-order': [
+      'error',
+      {
+        order: [
+          'DEFINITION',
+          'LIST_RENDERING',
+          'CONDITIONALS',
+          'RENDER_MODIFIERS',
+          'GLOBAL',
+          'UNIQUE',
+          'TWO_WAY_BINDING',
+          'OTHER_DIRECTIVES',
+          'OTHER_ATTR',
+          'EVENTS',
+          'CONTENT',
+        ],
+        alphabetical: false,
+      },
+    ],
   },
 }

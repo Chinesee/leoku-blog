@@ -8,7 +8,7 @@
       id="algolia-search-input"
       class="search-query"
       :placeholder="placeholder"
-    >
+    />
   </form>
 </template>
 
@@ -42,33 +42,41 @@ export default {
   methods: {
     initialize(userOptions, lang) {
       Promise.all([
-        import(/* webpackChunkName: "docsearch" */ 'docsearch.js/dist/cdn/docsearch.min.js'),
-        import(/* webpackChunkName: "docsearch" */ 'docsearch.js/dist/cdn/docsearch.min.css'),
+        import(
+          /* webpackChunkName: "docsearch" */ 'docsearch.js/dist/cdn/docsearch.min.js'
+        ),
+        import(
+          /* webpackChunkName: "docsearch" */ 'docsearch.js/dist/cdn/docsearch.min.css'
+        ),
       ]).then(([docsearch]) => {
         docsearch = docsearch.default
         const { algoliaOptions = {} } = userOptions
-        docsearch(Object.assign(
-          {},
-          userOptions,
-          {
+        docsearch(
+          Object.assign({}, userOptions, {
             inputSelector: '#algolia-search-input',
             // #697 Make docsearch work well at i18n mode.
-            algoliaOptions: Object.assign({
-              'facetFilters': [`lang:${lang}`].concat(algoliaOptions.facetFilters || []),
-            }, algoliaOptions),
+            algoliaOptions: Object.assign(
+              {
+                facetFilters: [`lang:${lang}`].concat(
+                  algoliaOptions.facetFilters || []
+                ),
+              },
+              algoliaOptions
+            ),
             handleSelected: (input, event, suggestion) => {
               const { pathname, hash } = new URL(suggestion.url)
               const routepath = pathname.replace(this.$site.base, '/')
               const _hash = decodeURIComponent(hash)
               this.$router.push(`${routepath}${_hash}`)
             },
-          },
-        ))
+          })
+        )
       })
     },
 
     update(options, lang) {
-      this.$el.innerHTML = '<input id="algolia-search-input" class="search-query">'
+      this.$el.innerHTML =
+        '<input id="algolia-search-input" class="search-query">'
       this.initialize(options, lang)
     },
   },

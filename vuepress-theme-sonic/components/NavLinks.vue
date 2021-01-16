@@ -1,22 +1,9 @@
 <template>
-  <nav
-    v-if="userLinks.length || repoLink"
-    class="nav-links"
-  >
+  <nav v-if="userLinks.length || repoLink" class="nav-links">
     <!-- user links -->
-    <div
-      v-for="item in userLinks"
-      :key="item.link"
-      class="nav-item"
-    >
-      <DropdownLink
-        v-if="item.type === 'links'"
-        :item="item"
-      />
-      <NavLink
-        v-else
-        :item="item"
-      />
+    <div v-for="item in userLinks" :key="item.link" class="nav-item">
+      <DropdownLink v-if="item.type === 'links'" :item="item" />
+      <NavLink v-else :item="item" />
     </div>
 
     <!-- repo link -->
@@ -58,7 +45,8 @@ export default {
           ariaLabel: this.$themeLocaleConfig.ariaLabel || 'Select language',
           items: Object.keys(locales).map(path => {
             const locale = locales[path]
-            const text = themeLocales[path] && themeLocales[path].label || locale.lang
+            const text =
+              (themeLocales[path] && themeLocales[path].label) || locale.lang
             let link
             // Stay on the current page
             if (locale.lang === this.$lang) {
@@ -90,9 +78,7 @@ export default {
     repoLink() {
       const { repo } = this.$site.themeConfig
       if (repo) {
-        return /^https?:/.test(repo)
-          ? repo
-          : `https://github.com/${repo}`
+        return /^https?:/.test(repo) ? repo : `https://github.com/${repo}`
       }
       return null
     },

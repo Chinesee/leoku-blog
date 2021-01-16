@@ -1,17 +1,8 @@
 <template>
-  <div
-    v-if="prev || next"
-    class="page-nav"
-  >
+  <div v-if="prev || next" class="page-nav">
     <p class="inner">
-      <span
-        v-if="prev"
-        class="prev"
-      >
-        <icon-right-arrow
-          class="arrow-icon"
-          style="transform: scale(-1);"
-        />
+      <span v-if="prev" class="prev">
+        <icon-right-arrow class="arrow-icon" style="transform: scale(-1)" />
         <a
           v-if="prev.type === 'external'"
           class="prev"
@@ -24,19 +15,12 @@
           <OutboundLink />
         </a>
 
-        <RouterLink
-          v-else
-          class="prev"
-          :to="prev.path"
-        >
+        <RouterLink v-else class="prev" :to="prev.path">
           {{ prev.title || prev.path }}
         </RouterLink>
       </span>
 
-      <span
-        v-if="next"
-        class="next"
-      >
+      <span v-if="next" class="next">
         <a
           v-if="next.type === 'external'"
           :href="next.path"
@@ -48,10 +32,7 @@
           <OutboundLink />
         </a>
 
-        <RouterLink
-          v-else
-          :to="next.path"
-        >
+        <RouterLink v-else :to="next.path">
           {{ next.title || next.path }}
         </RouterLink>
         <icon-right-arrow class="arrow-icon" />
@@ -69,9 +50,9 @@ import isNil from 'lodash/isNil'
 export default {
   name: 'PageNav',
 
-  props: ['sidebarItems'],
-
   components: { IconRightArrow },
+
+  props: ['sidebarItems'],
 
   computed: {
     prev() {
@@ -107,7 +88,7 @@ const LINK_TYPES = {
 
 function resolvePageLink(
   linkType,
-  { $themeConfig, $page, $route, $site, sidebarItems },
+  { $themeConfig, $page, $route, $site, sidebarItems }
 ) {
   const { resolveLink, getThemeLinkConfig, getPageLinkConfig } = linkType
 

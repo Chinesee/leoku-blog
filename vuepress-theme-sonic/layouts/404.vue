@@ -5,9 +5,7 @@
 
       <blockquote>这里似乎荒无人烟...</blockquote>
 
-      <RouterLink to="/">
-        离开这儿
-      </RouterLink>
+      <RouterLink to="/"> 离开这儿 </RouterLink>
     </div>
   </div>
 </template>

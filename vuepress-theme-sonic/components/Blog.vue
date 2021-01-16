@@ -1,14 +1,8 @@
 <template>
   <main class="blog">
-    <blog-list
-      v-show="showBlogList"
-      :blog-items="blogItems"
-    />
+    <blog-list v-show="showBlogList" :blog-items="blogItems" />
 
-    <blog-content
-      v-show="!showBlogList"
-      :blog-items="blogItems"
-    />
+    <blog-content v-show="!showBlogList" :blog-items="blogItems" />
   </main>
 </template>
 <script>
@@ -17,8 +11,8 @@ import BlogContent from '@theme/components/BlogContent.vue'
 
 export default {
   name: 'Blog',
-  props: ['blogItems'],
   components: { BlogList, BlogContent },
+  props: ['blogItems'],
   computed: {
     showBlogList() {
       return this.$page.path === '/blog/'

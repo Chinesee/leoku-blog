@@ -1,10 +1,7 @@
 <template>
   <aside class="side-nav">
     <ul>
-      <li
-        v-for="item in $page.headers"
-        :key="item.title"
-      >
+      <li v-for="item in $page.headers" :key="item.title">
         {{ item.title }}
       </li>
     </ul>

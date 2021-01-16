@@ -20,10 +20,9 @@
       </ul>
     </div>
     <slot />
-    <pre
-      v-if="codeTabs.length < 1"
-      class="pre-blank"
-    >// Make sure to add code blocks to your code group</pre>
+    <pre v-if="codeTabs.length < 1" class="pre-blank">
+// Make sure to add code blocks to your code group</pre
+    >
   </div>
 </template>
 
@@ -45,16 +44,18 @@ export default {
     },
   },
   mounted() {
-    this.codeTabs = (this.$slots.default || []).filter(slot => Boolean(slot.componentOptions)).map((slot, index) => {
-      if (slot.componentOptions.propsData.active === '') {
-        this.activeCodeTabIndex = index
-      }
+    this.codeTabs = (this.$slots.default || [])
+      .filter(slot => Boolean(slot.componentOptions))
+      .map((slot, index) => {
+        if (slot.componentOptions.propsData.active === '') {
+          this.activeCodeTabIndex = index
+        }
 
-      return {
-        title: slot.componentOptions.propsData.title,
-        elm: slot.elm,
-      }
-    })
+        return {
+          title: slot.componentOptions.propsData.title,
+          elm: slot.elm,
+        }
+      })
 
     if (this.activeCodeTabIndex === -1 && this.codeTabs.length > 0) {
       this.activeCodeTabIndex = 0

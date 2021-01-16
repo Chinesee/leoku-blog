@@ -39,7 +39,9 @@ export default {
 
     exact() {
       if (this.$site.locales) {
-        return Object.keys(this.$site.locales).some(rootLink => rootLink === this.link)
+        return Object.keys(this.$site.locales).some(
+          rootLink => rootLink === this.link
+        )
       }
       return this.link === '/'
     },
