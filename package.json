@@ -1,8 +1,8 @@
 {
   "name": "leoku-blog",
   "description": "LeoKu's blog",
-  "license": "MIT",
-  "author": "LeoKu <czc12580520@gmail.com>",
+  "license": "Apache License 2.0",
+  "author": "@LeoKu <czc12580520@gmail.com>",
   "scripts": {
     "start": "yarn dev",
     "dev": "vuepress dev docs",
