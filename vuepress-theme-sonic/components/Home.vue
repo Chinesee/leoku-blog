@@ -27,7 +27,7 @@
             {
               name: 'GitHub',
               icon: '/icon/github.svg',
-              link: 'https://github.com/Chinesee',
+              link: 'https://github.com/Codennnn',
             },
             {
               name: '新浪微博',
