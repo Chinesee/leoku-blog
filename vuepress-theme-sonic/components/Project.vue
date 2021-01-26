@@ -60,22 +60,22 @@ export default {
         title: '意想社团 - 高校社团 APP',
         description:
           '在意想社团，你可以找到感兴趣的社团组织，也可以作为管理者来管理自己的组织。该应用可以用来宣传社团活动，加强社团间的交流。本项目使用 React Native 开发。',
-        github: 'https://github.com/Chinesee/eason-club',
+        github: 'https://github.com/Codennnn/eason-club',
       },
       {
         img: '/img/cover_venus.jpg',
         title: 'Venus - 中后台系统开发模板',
         description:
           '这是一个基于 Vue 的网站模板，为开发者搭建好了网站的基本布局，也实现了后台系统常用的功能如权限控制、可视化仪表盘等。',
-        github: 'https://github.com/Chinesee/venus',
+        github: 'https://github.com/Codennnn/venus',
       },
       {
         img: '/img/cover_campus.jpg',
         title: '意想课表 - 教务信息查询助手',
         description:
           '使用 mpvue 编译的微信小程序，用于帮助学生们查课表、查成绩、查考勤。',
-        github: 'https://github.com/Chinesee/eason-campus',
-        preview: 'https://github.com/Chinesee',
+        github: 'https://github.com/Codennnn/eason-campus',
+        preview: 'https://github.com/Codennnn',
       },
       {
         img: '/img/cover_share_admin.jpg',
@@ -90,7 +90,7 @@ export default {
         title: '乐享校园客户端 - 校园二手交易平台',
         description:
           '我的毕业设计，一个可以发布和购买二手商品的交易平台，具有订单查询、在线沟通、商品评价等功能。',
-        github: 'https://github.com/Chinesee/love-share-client',
+        github: 'https://github.com/Codennnn/love-share-client',
         preview: '',
       },
     ]

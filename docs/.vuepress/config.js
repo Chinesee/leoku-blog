@@ -29,7 +29,7 @@ const menus = [
   //   group: '其他',
   //   menu: [
   //     { text: '常见问题', link: '/docs/other/faq' },
-  //     { text: '版本记录', link: 'https://github.com/Chinesee/venus/releases', external: true },
+  //     { text: '版本记录', link: 'https://github.com/Codennnn/venus/releases', external: true },
   //   ],
   // },
 ]
@@ -77,7 +77,7 @@ module.exports = {
 
   themeConfig: {
     logo: '/logo.png',
-    repo: 'https://github.com/Chinesee',
+    repo: 'https://github.com/Codennnn',
     lastUpdated: '最近更新',
     ...getNavbar(),
     ...getSidebar(),

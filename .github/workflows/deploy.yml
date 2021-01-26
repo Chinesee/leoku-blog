@@ -40,7 +40,7 @@ jobs:
     - name: Push to gh-pages
       env:
         # 填写项目所在仓库地址
-        GITHUB_REPO: github.com/Chinesee/leoku-blog.git
+        GITHUB_REPO: github.com/Codennnn/leoku-blog.git
       run: |
         cd ./docs/.vuepress/dist
         git init
